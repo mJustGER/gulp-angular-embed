@@ -1,0 +1,22 @@
+{
+  "name": "gulp-angular-embed",
+  "version": "1.0.0",
+  "description": "sss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mJustGER/gulp-angular-embed.git"
+  },
+  "author": "Matthias Just",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mJustGER/gulp-angular-embed/issues"
+  },
+  "homepage": "https://github.com/mJustGER/gulp-angular-embed#readme",
+  "dependencies": {
+    "@types/node": "^8.0.25"
+  }
+}
