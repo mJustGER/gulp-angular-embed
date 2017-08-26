@@ -1,19 +1,50 @@
 {
-  "name": "gulp-angular-embed",
-  "version": "1.0.0",
-  "description": "Embeds external CSS and HTML resources in Angular components",
-  "main": "gulp-angular-embed.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": {
+    "email": "info@nommoo.com",
+    "name": "Matthias Just"
   },
+  "bugs": {
+    "url": "https://github.com/mJustGER/gulp-angular-embed/issues"
+  },
+  "contributors": [
+
+  ],
+  "dependencies": {
+    "gulp-util": "^2.2.17",
+    "through2": "^2.0.0"
+  },
+  "description": "Embeds external CSS and HTML resources in Angular components",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "typescript": "^2.5.1"
+  },
+  "directories": {},
+
+
+  "homepage": "https://github.com/mJustGER/gulp-angular-embed#readme",
+  "installable": true,
+  "keywords": [
+    "Embed",
+    "Angular",
+    "Template",
+    "Replace"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "Matthias Just",
+      "email": "contact@nommoo.com"
+    }
+  ],
+  "name": "gulp-angular-embed",
+  "optionalDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mJustGER/gulp-angular-embed.git"
   },
-  "author": "Matthias Just",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mJustGER/gulp-angular-embed/issues"
+  "scripts": {
   },
-  "homepage": "https://github.com/mJustGER/gulp-angular-embed#readme"
+  "version": "1.0.0",
+ 
 }
