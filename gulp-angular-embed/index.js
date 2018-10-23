@@ -35,7 +35,7 @@ function getStyleSheetsContent(file, fileContent) {
 
 function getHtmlTemplateContent(file, fileContent) {
     // Search for TemplateUrlTag
-    var TemplateUrlTagReslut = fileContent.toString().match(/templateUrl:\s(['"])[^'",]*\1/igm);
+    var TemplateUrlTagReslut = fileContent.toString().match(/templateUrl\s:\s(['"])[^'",]*\1/igm);
     if (TemplateUrlTagReslut) {
         // Get and store templateTag and templateUrl
         var TemplateUrlTag = TemplateUrlTagReslut.toString().split(":");
