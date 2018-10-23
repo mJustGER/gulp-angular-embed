@@ -71,7 +71,7 @@ var gulpAngularEmbed = function () {
              
             // get htmlTemplate an embed it into the angularJs component file
             var HtmlTemplateContent = getHtmlTemplateContent(file, fileContent)
-            var fileContent = fileContent.toString().replace(/templateUrl:\s(['"])[^'",]*\1/igm, "template: \"" + HtmlTemplateContent + "\"");
+            var fileContent = fileContent.toString().replace(/templateUrl\s*:\s(['"])[^'",]*\1/igm, "template: \"" + HtmlTemplateContent + "\"");
              
             // get styleSheets an embed it into the angularJs component file
             var StyleSheetContent = getStyleSheetsContent(file, fileContent)
