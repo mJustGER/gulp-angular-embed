@@ -35,7 +35,7 @@ function getStyleSheetsContent(file, fileContent) {
 
 function getHtmlTemplateContent(file, fileContent) {
     // Search for TemplateUrlTag
-    var TemplateUrlTagReslut = fileContent.toString().match(/templateUrl\s:\s(['"])[^'",]*\1/igm);
+    var TemplateUrlTagReslut = fileContent.toString().match(/templateUrl\s*:\s(['"])[^'",]*\1/igm);
     if (TemplateUrlTagReslut) {
         // Get and store templateTag and templateUrl
         var TemplateUrlTag = TemplateUrlTagReslut.toString().split(":");
@@ -71,7 +71,7 @@ var gulpAngularEmbed = function () {
              
             // get htmlTemplate an embed it into the angularJs component file
             var HtmlTemplateContent = getHtmlTemplateContent(file, fileContent)
-            var fileContent = fileContent.toString().replace(/templateUrl:\s(['"])[^'",]*\1/igm, "template: \"" + HtmlTemplateContent + "\"");
+            var fileContent = fileContent.toString().replace(/templateUrl\s*:\s(['"])[^'",]*\1/igm, "template: \"" + HtmlTemplateContent + "\"");
              
             // get styleSheets an embed it into the angularJs component file
             var StyleSheetContent = getStyleSheetsContent(file, fileContent)
